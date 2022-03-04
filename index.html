@@ -195,15 +195,30 @@
                             <h3>Contacto</h3>
                             <p>Quieres contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                         </div>
-                        <div>
-                            <div class = "contacto__form">
-                                <input type="text" name="user_name" placeholder="Nombre">
-                                <input type="text" id="name" name="email" placeholder="Email">
-                                <input type="text" name= "asunto" placeholder="Asunto">
-                                <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
-                            </div>  
-                        </div>
-                        <input type="button" class = "boton" value = "Enviar formulario">
+                        <form   action="https://formspree.io/f/xbjwyagg"
+                        method="POST" class = "contacto__form">
+                                <div class = "contacto-form__caja-texto">
+                                    <input type="text" required name = "Nombre">
+                                    <span></span>
+                                    <label>Nombre</label>
+                                </div>
+                                <div class = "contacto-form__caja-texto">
+                                    <input type="email" required name = "email">
+                                    <span></span>
+                                    <label>Email</label>
+                                </div>
+                                <div class = "contacto-form__caja-texto">
+                                    <input type="text" required name = "asunto">
+                                    <span></span>
+                                    <label>Asunto</label>
+                                </div>
+                                <div class = "contacto-form__caja-texto">
+                                    <textarea type = "message" required></textarea>
+                                    <span></span>
+                                    <label>Mensaje</label>
+                                </div>
+                                <button type="submit" class = "boton">Enviar formulario</button>
+                        </form>  
                     </div>
                 </div>
             </div>

@@ -311,14 +311,100 @@ header{
     flex-direction: column;
 }
 
-.contacto__form input{
-    height: 56px;
-    margin: 3% 0;
+.contacto-form__caja-texto{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 20px 0;
 }
 
-.contacto__form textarea{
-    margin: 3% 0;
-    height: 167px;
+.contacto-form__caja-texto input{
+    width: 100%;
+    padding: 0 5px;
+    padding-top: 25px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: white;
+    outline: none;
+}
+
+.contacto-form__caja-texto label{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contacto-form__caja-texto span::before{
+    content:'';
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.contacto-form__caja-texto input:focus ~ label, .contacto-form__caja-texto input:valid ~ label{
+    color: #2691d9;
+}
+
+.contacto-form__caja-texto input:focus ~ span::before, .contacto-form__caja-texto input:valid ~ span::before{
+    width: 100%;
+}
+
+.contacto-form__caja-texto:nth-last-child(2){
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 20px 0;
+}
+
+.contacto-form__caja-texto:nth-last-child(2) textarea{
+    width: 100%;
+    padding: 0 5px;
+    padding-top: 25px;
+    height: 90px;
+    font-size: 16px;
+    border: none;
+    background: white;
+    outline: none;
+    resize: none;
+    font-family:  'Questrial', sans-serif;
+}
+
+.contacto-form__caja-texto:nth-last-child(2) label{
+    position: absolute;
+    top: calc(50% - 46px);
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contacto-form__caja-texto:nth-last-child(2) span::before{
+    content:'';
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.contacto-form__caja-texto textarea:focus ~ label, .contacto-form__caja-texto textarea:valid ~ label{
+    color: #2691d9;
+}
+
+.contacto-form__caja-texto textarea:focus ~ span::before, .contacto-form__caja-texto textarea:valid ~ span::before{
+    width: 100%;
 }
 
 .pie-pagina{
@@ -338,3 +424,4 @@ header{
 .copyright__texto p{
     text-align: center;
 }
+
