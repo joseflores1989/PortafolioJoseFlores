@@ -427,14 +427,31 @@ header{
 }
 
 @media screen and (max-width:480px){
+    body{
+        width: fit-content;
+    }
+
     .encabezado__navegacion{
         visibility: hidden;
     }  
 
-    .presentacion{
-        width: 100%;
+    .skills__lista, .hobbies__lista, .estudios__lista, .estudios__lista{
+        flex-wrap: wrap;
     }
+    .skills__lista li, .hobbies__lista li{
+        margin: 20px;
+    }
+
+    .estudios__lista li{
+        min-width: 220px;
+        margin-bottom: 10px;
+    }
+
     .experiencia-profesional__primer-proyecto, .experiencia-profesional__segundo-proyecto{
         flex-direction: column;
+    }
+
+    .contacto__img_titulo-descipcion-form-boton img{
+        display:none;
     }
 }
