@@ -16,6 +16,7 @@ header{
 .encabezado{
     padding: 2% 0;
     line-height: 25px;
+    width: 100%;
 }
 
 .encabezado__icono-titulo, .encabezado__icono-titulo p, .encabezado__navegacion, .encabezado__navegacion li, .encabezado__icono-titulo img{
@@ -425,3 +426,15 @@ header{
     text-align: center;
 }
 
+@media screen and (max-width:480px){
+    .encabezado__navegacion{
+        visibility: hidden;
+    }  
+
+    .presentacion{
+        width: 100%;
+    }
+    .experiencia-profesional__primer-proyecto, .experiencia-profesional__segundo-proyecto{
+        flex-direction: column;
+    }
+}
