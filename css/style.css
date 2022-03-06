@@ -48,8 +48,6 @@ header{
 
 .presentacion{
     padding: 6% 0;
-    display: flex;
-    align-items: center;
 }
 
 .presentacion__imagen{
@@ -434,7 +432,114 @@ header{
     text-align: center;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:360px){
+    body{
+        width: fit-content;
+    }
+
+    .encabezado__navegacion{
+        visibility: hidden;
+    } 
+
+    .presentacion{
+        display: block;
+    }
+
+    .presentacion__imagen{
+        width: 50%;
+        float: none;
+    }
+
+    .presentacion__titulo-introduccion h1 {
+        font-size: 2em;
+    }
+
+    .presentacion__titulo-introduccion p {
+        font-size: 1em;
+    }
+
+    .presentacion__links-externos li {
+        font-size: 0.8em;
+    }
+
+    .presentacion__titulo-introduccion img {
+    }
+
+    .bio__titulo-descripcion h2, .skills h2, .hobbies h2, .estudios h2, .experiencia-profesional h2, .contacto__titulo-descripcion h3{
+        font-size: 1.5em;
+    }
+
+    .bio__titulo-descripcion p{
+        font-size: 1em;
+    }
+
+    .bio__firma img{
+        width: 100px;
+    }
+    .skills__lista li, .hobbies__lista li {
+        min-width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        background-color: white;
+        margin: 10px;
+        vertical-align: bottom;
+        padding-left: 0.5%;
+    }
+
+    .sills__texto{
+        font-size: .8em;
+    }
+
+    .hobbies__lista li:first-child p{
+        font-size:.7em;
+    }
+
+    .hobbies__lista li:nth-child(4) p{
+        font-size:.7em;
+    }
+
+    .skills__lista__iconos, .hobbies__lista__iconos {
+        width: 25px;
+        padding: 53% 0 2% 2%;
+        transition: all .3s ease-in-out;
+    }
+
+    .estudios__lista img {
+        width: 90px;
+    }
+
+    .estudios__lista li p{
+        font-size: 0.8em;
+    }
+
+
+    .experiencia-profesional__primer-proyecto, .experiencia-profesional__segundo-proyecto{
+        flex-direction: column;
+    }
+
+    .experiencia-profesional__primer-proyecto__img, .experiencia-profesional__segundo-proyecto__img{
+      width: 100%;
+    }
+
+    .experiencia-profesional__primer-proyecto__titulo-descripcion-botones p, .experiencia-profesional__primer-proyecto__titulo-descripcion-botones h3{
+        text-align: center;
+    }
+
+    .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones{
+        order:2;
+        margin:0;
+    }
+
+    .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones p, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones h3{
+        text-align: center;
+    }
+
+    .contacto__img_titulo-descipcion-form-boton img{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 360px){
     body{
         width: fit-content;
     }
