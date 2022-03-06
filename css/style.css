@@ -171,7 +171,7 @@ header{
 
 
 .skills__lista__iconos:hover, .hobbies__lista__iconos:hover{
-    transform: scale(1.5) translate(20%, -20%);
+    transform: scale(1.5) translate(50%, -25%);
 }
 
 #formacion{
@@ -189,11 +189,9 @@ header{
 
 .estudios__lista li{
     text-align: left;
-    min-width: 220px;
-    margin-bottom: 10px;
+    min-width: 287px;
+    margin:20px 20px;
     vertical-align: bottom;
-    margin: 0 0.8%;
-    margin-bottom: 10px;
     padding: 1%;
     box-sizing: content-box;
     background-color: white;
@@ -454,27 +452,20 @@ header{
         font-size: 2em;
     }
 
-    .presentacion__titulo-introduccion p {
+    .presentacion__titulo-introduccion p, .bio__titulo-descripcion p{
         font-size: 1em;
     }
 
-    .presentacion__links-externos li {
+    .presentacion__links-externos li, .sills__texto, .estudios__lista li p{
         font-size: 0.8em;
-    }
-
-    .presentacion__titulo-introduccion img {
     }
 
     .bio__titulo-descripcion h2, .skills h2, .hobbies h2, .estudios h2, .experiencia-profesional h2, .contacto__titulo-descripcion h3{
         font-size: 1.5em;
     }
 
-    .bio__titulo-descripcion p{
-        font-size: 1em;
-    }
-
-    .bio__firma img{
-        width: 100px;
+    .bio__firma img, .estudios__lista img{
+        width: 90px;
     }
     .skills__lista li, .hobbies__lista li {
         min-width: 100px;
@@ -486,15 +477,7 @@ header{
         padding-left: 0.5%;
     }
 
-    .sills__texto{
-        font-size: .8em;
-    }
-
-    .hobbies__lista li:first-child p{
-        font-size:.7em;
-    }
-
-    .hobbies__lista li:nth-child(4) p{
+    .hobbies__lista li:first-child p, .hobbies__lista li:nth-child(4) p{
         font-size:.7em;
     }
 
@@ -504,15 +487,6 @@ header{
         transition: all .3s ease-in-out;
     }
 
-    .estudios__lista img {
-        width: 90px;
-    }
-
-    .estudios__lista li p{
-        font-size: 0.8em;
-    }
-
-
     .experiencia-profesional__primer-proyecto, .experiencia-profesional__segundo-proyecto{
         flex-direction: column;
     }
@@ -521,17 +495,13 @@ header{
       width: 100%;
     }
 
-    .experiencia-profesional__primer-proyecto__titulo-descripcion-botones p, .experiencia-profesional__primer-proyecto__titulo-descripcion-botones h3{
+    .experiencia-profesional__primer-proyecto__titulo-descripcion-botones p, .experiencia-profesional__primer-proyecto__titulo-descripcion-botones h3, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones p, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones h3{
         text-align: center;
     }
 
     .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones{
         order:2;
         margin:0;
-    }
-
-    .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones p, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones h3{
-        text-align: center;
     }
 
     .contacto__img_titulo-descipcion-form-boton img{
@@ -560,11 +530,11 @@ header{
         font-size: 2em;
     }
 
-    .presentacion__titulo-introduccion p {
+    .presentacion__titulo-introduccion p, .bio__titulo-descripcion p {
         font-size: 1em;
     }
 
-    .presentacion__links-externos li {
+    .presentacion__links-externos li, .sills__texto, .estudios__lista li p{
         font-size: 0.8em;
     }
 
@@ -575,12 +545,8 @@ header{
         font-size: 1.5em;
     }
 
-    .bio__titulo-descripcion p{
-        font-size: 1em;
-    }
-
-    .bio__firma img{
-        width: 100px;
+    .bio__firma img, .estudios__lista img {
+        width: 90px;
     }
     .skills__lista li, .hobbies__lista li {
         min-width: 100px;
@@ -592,17 +558,10 @@ header{
         padding-left: 0.5%;
     }
 
-    .sills__texto{
-        font-size: .8em;
-    }
-
-    .hobbies__lista li:first-child p{
+    .hobbies__lista li:first-child p, .hobbies__lista li:nth-child(4) p{
         font-size:.7em;
     }
 
-    .hobbies__lista li:nth-child(4) p{
-        font-size:.7em;
-    }
 
     .skills__lista__iconos, .hobbies__lista__iconos {
         width: 25px;
@@ -610,34 +569,21 @@ header{
         transition: all .3s ease-in-out;
     }
 
-    .estudios__lista img {
-        width: 90px;
-    }
-
-    .estudios__lista li p{
-        font-size: 0.8em;
-    }
-
-
     .experiencia-profesional__primer-proyecto, .experiencia-profesional__segundo-proyecto{
         flex-direction: column;
     }
 
     .experiencia-profesional__primer-proyecto__img, .experiencia-profesional__segundo-proyecto__img{
-      width: 100%;
+        width: 100%;
     }
 
-    .experiencia-profesional__primer-proyecto__titulo-descripcion-botones p, .experiencia-profesional__primer-proyecto__titulo-descripcion-botones h3{
+    .experiencia-profesional__primer-proyecto__titulo-descripcion-botones p, .experiencia-profesional__primer-proyecto__titulo-descripcion-botones h3, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones p, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones h3{
         text-align: center;
     }
 
     .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones{
         order:2;
         margin:0;
-    }
-
-    .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones p, .experiencia-profesional__segundo-proyecto__titulo-descripcion-botones h3{
-        text-align: center;
     }
 
     .contacto__img_titulo-descipcion-form-boton img{
