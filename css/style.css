@@ -443,6 +443,29 @@ header{
         visibility: hidden;
     } 
 
+    .presentacion{
+        display: block;
+    }
+
+    .presentacion__imagen{
+        width: 50%;
+    }
+
+    .presentacion__titulo-introduccion h1 {
+        font-size: 2em;
+    }
+
+    .presentacion__titulo-introduccion p {
+        font-size: 1em;
+    }
+
+    .presentacion__links-externos li {
+        font-size: 0.8em;
+    }
+
+    .presentacion__titulo-introduccion img {
+    }
+
     .bio__titulo-descripcion h2, .skills h2, .hobbies h2, .estudios h2, .experiencia-profesional h2, .contacto__titulo-descripcion h3{
         font-size: 1.5em;
     }
