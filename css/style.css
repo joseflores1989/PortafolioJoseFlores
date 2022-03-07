@@ -320,7 +320,8 @@ header{
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 20px 0;
-}
+    display: flex;
+}   
 
 .contacto-form__caja-texto input{
     width: 100%;
