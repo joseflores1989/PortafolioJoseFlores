@@ -31,12 +31,7 @@ header{
     padding: 0 10px;
 }
 
-.link{
-    text-decoration: none;
-    color:#000000;
-    transition: 500ms;
 
-}
 .link:hover{
     
     font-weight: bold;
@@ -53,6 +48,8 @@ header{
 .presentacion__imagen{
     float:right;
     border-radius: 50%;
+    vertical-align: middle;
+    padding: 2%;
 }
 
 .presentacion__titulo-introduccion{
@@ -76,8 +73,9 @@ header{
 
 }
 .presentacion__links-externos{
-    line-height: 20px;
-    padding: 2% 0;
+    line-height: 25px;
+    width: 100%;
+    padding-top: 25px;
 }
 .presentacion__links-externos li{
     display: inline;
@@ -86,9 +84,17 @@ header{
     font-size: 1.5em;
 }
 
-.presentacion__imagen{
+.link{
+    text-decoration: none;
+    color:#000000;
+    transition: 500ms;
+
+}
+
+.link__icono{
+    width: 25px;
     vertical-align: middle;
-    padding: 2%;
+    padding: 5px;
 }
 
 #sobre-mi{
@@ -465,6 +471,10 @@ header{
         font-size: 1.5em;
     }
 
+    .link__icono{
+        width: 10px;
+    }
+
     .bio__firma img, .estudios__lista img{
         width: 90px;
     }
@@ -537,6 +547,10 @@ header{
 
     .presentacion__links-externos li, .sills__texto, .estudios__lista li p{
         font-size: 0.8em;
+    }
+
+    .link__icono{
+        width: 15px;
     }
 
     .presentacion__titulo-introduccion img {
