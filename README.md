@@ -2,6 +2,5 @@
 
 Que falta?
 
-Emprolijar márgenes y padding en general.
-Posicionar línea de textarea en Contacto.
-HACER RESPONSIVE.
+Emprolijar medidas con diferentes tamaños de pantalla
+Solucionar bug visual con pantalla en "landscape" (móvil)
