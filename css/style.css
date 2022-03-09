@@ -14,6 +14,7 @@ header{
 
 /*Encabezado*/
 .encabezado{
+    display:flex;
     padding: 2% 0;
     line-height: 25px;
     width: 100%;
@@ -27,7 +28,7 @@ header{
     width: 25px;
 }
 .encabezado__navegacion{
-    float:right;
+    margin-left: auto;
 }
 
 .encabezado__navegacion li{
@@ -161,8 +162,8 @@ header{
 }
 
 .skills__lista li, .hobbies__lista li {
-    min-width: 200px;
-    height: 200px;
+    min-width: 190px;
+    height: 190px;
     box-sizing: border-box;
     background-color: white;
     
@@ -448,7 +449,7 @@ input:-webkit-autofill:active{
     text-align: center;
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:500px){
     body{
         width: fit-content;
     }
@@ -510,7 +511,7 @@ input:-webkit-autofill:active{
     }
 
     .hobbies__lista li:first-child p, .hobbies__lista li:nth-child(4) p{
-        font-size:.7em;
+        font-size:.6em;
     }
 
     .skills__lista__iconos, .hobbies__lista__iconos {
@@ -541,17 +542,17 @@ input:-webkit-autofill:active{
     }
 }
 
-@media screen and (max-width:768px) and (min-width: 360px){
+@media screen and (max-width:1050px) and (min-width: 500px){
     body{
         width: fit-content;
     }
 
-    .encabezado__navegacion{
+    .encabezado__navegacion li:not(:last-child) {
         display: none;
     } 
 
     .encabezado__icono-titulo img{
-        width: 15px;
+        width: 20px;
     }
 
     .presentacion{
@@ -560,19 +561,24 @@ input:-webkit-autofill:active{
     }
 
     .presentacion__imagen{
-        width: 50%;
+        width: 35%;
+        min-width: 200px;
     }
 
     .presentacion__titulo-introduccion h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .presentacion__titulo-introduccion p, .bio__titulo-descripcion p {
+        font-size: 1.5em;
+    }
+
+    .presentacion__links-externos li, .sills__texto, .estudios__lista li p{
         font-size: 1em;
     }
 
-    .presentacion__links-externos li, .sills__texto, .estudios__lista li p, .encabezado__icono-titulo p{
-        font-size: 0.8em;
+    .encabezado__icono-titulo p, .link{
+        font-size: 0.9em;
     }
 
     .link__icono{
@@ -583,7 +589,7 @@ input:-webkit-autofill:active{
     }
 
     .bio__titulo-descripcion h2, .skills h2, .hobbies h2, .estudios h2, .experiencia-profesional h2, .contacto__titulo-descripcion h3{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .bio__firma img, .estudios__lista img {
@@ -600,7 +606,7 @@ input:-webkit-autofill:active{
     }
 
     .hobbies__lista li:first-child p, .hobbies__lista li:nth-child(4) p{
-        font-size:.7em;
+        font-size:.6em;
     }
 
 
