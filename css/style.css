@@ -475,7 +475,11 @@ input:-webkit-autofill:active{
     .presentacion__imagen{
         width: 50%;
         float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
+    
 
     .presentacion__titulo-introduccion h1 {
         font-size: 2em;
