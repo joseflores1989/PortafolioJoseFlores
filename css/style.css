@@ -597,7 +597,7 @@ input:-webkit-autofill:active{
     }
 
     .bio__firma img, .estudios__lista img {
-        width: 90px;
+        width: 150px;
     }
     .skills__lista li, .hobbies__lista li {
         min-width: 100px;
